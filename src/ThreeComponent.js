@@ -1,4 +1,4 @@
-import * as THREE from 'three';
+import * as THREE from './node_modules/src/Three.js';
 
 export function initThreeComponent(container) {
   // Create a scene
