@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,6 +19,15 @@
   </style>
 </head>
 <body>
+  <script type="module" src="./index.js"></script>
+  <script type="module">
+    import { initThreeComponent, generateTerrain, THREE, ImprovedNoise } from './index.js';
+
+    const container = document.getElementById('container');
+
+    initThreeComponent(container);
+    generateTerrain(THREE, ImprovedNoise);
+  </script>
   <div id="container"></div>
 </body>
 </html>

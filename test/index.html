@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>My first three.js app</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+		<script src="https://threejs.org/examples/js/controls/OrbitControls.js"></script>
+		<style>
+			body { margin: 0; }
+		</style>
+	</head>
+	<body>
+
+
+		<script src="index.js" type="module"></script>
+		<script src="terrain.js" type="module"></script>
+		<script type="module">
+			import { terrain } from "./terrain.js";
+			// import { OrbitControls } from "https://unpkg.com/three@0.112/examples/jsm/controls/OrbitControls.js";
+			
+			// const scene = new THREE.Scene();
+			// const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+			// const renderer = new THREE.WebGLRenderer("body");
+			// renderer.setSize(window.innerWidth, window.innerHeight);
+			// document.body.appendChild(renderer.domElement);
+			
+			// const noise = new SimplexNoise();
+			
+			// const terrainSize = 200;
+			// const terrainSegments = 100;
+			// const terrainGeometry = new THREE.PlaneBufferGeometry(terrainSize, terrainSize, terrainSegments, terrainSegments);
+			// terrainGeometry.rotateX(-Math.PI / 2);
+			
+			// const noiseScale = 0.5;
+			// const noiseStrength = 25;
+			// const positionAttribute = terrainGeometry.getAttribute('position');
+			// for (let i = 0; i < positionAttribute.count; i++) {
+			//   const vertex = new THREE.Vector3().fromBufferAttribute(positionAttribute, i);
+			//   const noiseValue = noise.noise2D(vertex.x * noiseScale, vertex.y * noiseScale);
+			//   vertex.z += noiseValue * noiseStrength;
+			//   positionAttribute.setXYZ(i, vertex.x, vertex.y, vertex.z);
+			// }
+			
+			// const terrainMaterial = new THREE.MeshStandardMaterial({
+			//   color: 0x7f6548,
+			//   roughness: 1,
+			//   metalness: 0,
+			// });
+			
+			// const terrainMesh = new THREE.Mesh(terrainGeometry, terrainMaterial);
+			// terrainMesh.receiveShadow = true;
+			
+			// scene.add(terrainMesh);
+			
+			// const light = new THREE.DirectionalLight(0xffffff, 1);
+			// light.position.set(1, 1, 1);
+			// scene.add(light);
+			
+			// camera.position.z = 100;
+			// camera.position.y = 50;
+			
+			// const controls = new THREE.OrbitControls(camera);
+			
+			// function animate() {
+			//   requestAnimationFrame(animate);
+			//   controls.update();
+			//   renderer.render(scene, camera);
+			// }
+			// animate();
+
+
+		</script>
+</body>
+
+	</html>

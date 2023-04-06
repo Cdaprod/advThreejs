@@ -1,4 +1,4 @@
-import * as THREE from './node_modules/src/Three.js';
+import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.135.0/build/three.module.js';
 
 export function initThreeComponent(container) {
   // Create a scene
