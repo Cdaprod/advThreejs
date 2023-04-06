@@ -1,4 +1,4 @@
-		const terrain = {
+		const { terrain } = {
 
 		const noise = new SimplexNoise();
 			
